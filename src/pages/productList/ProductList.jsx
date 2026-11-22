@@ -23,6 +23,7 @@ import {
 export default function ProductList() {
   const [data, setData] = useState([]);
   const [categories, setCategories] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState("all");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [deleteTarget, setDeleteTarget] = useState(null);
@@ -70,6 +71,13 @@ export default function ProductList() {
     }
     return map;
   }, [categories]);
+
+  const filteredData = useMemo(() => {
+    if (selectedCategory === "all") return data;
+    return data.filter(
+      (item) => String(item.category_id ?? "") === selectedCategory
+    );
+  }, [data, selectedCategory]);
 
   const handleConfirmDelete = async () => {
     if (!deleteTarget) return;
@@ -191,10 +199,28 @@ export default function ProductList() {
   return (
     <div className="productList">
       <div className="productListHeader">
-        <h1 className="productListTitle">Products</h1>
-        <Link to="/newproduct">
+        <div className="productListTitleGroup">
+          <h1 className="productListTitle">Products</h1>
+          <select
+            className="productListCategorySelect"
+            value={selectedCategory}
+            onChange={(e) => setSelectedCategory(e.target.value)}
+            aria-label="Filter products by category"
+          >
+            <option value="all">All Categories</option>
+            {categories.map((cat) => (
+              <option key={cat.id} value={String(cat.id)}>
+                {cat.name_en || cat.name}
+                {cat.name_ar ? ` (${cat.name_ar})` : ""}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <Link to="/newproduct" className="productListAddLink">
           <button type="button" className="productListAddBtn">
-            Add Product
+            <span className="addBtnTextFull">Add Product</span>
+            <span className="addBtnTextMobile">Add</span>
           </button>
         </Link>
       </div>
@@ -207,10 +233,14 @@ export default function ProductList() {
         <div className="productListState">
           No products found. Click &quot;Add Product&quot; to create one.
         </div>
+      ) : filteredData.length === 0 ? (
+        <div className="productListState">
+          No products found in this category.
+        </div>
       ) : (
         <div className="productListGridWrap">
           <DataGrid
-            rows={data}
+            rows={filteredData}
             columns={columns}
             disableRowSelectionOnClick
             autoHeight
