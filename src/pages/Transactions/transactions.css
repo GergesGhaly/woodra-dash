@@ -1,0 +1,110 @@
+.transactions {
+  flex: 6;
+  padding: 20px;
+}
+
+.operationsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.operationsTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2b2b2b;
+}
+
+.operationsError {
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  background-color: #fdecea;
+  color: #b71c1c;
+  border: 1px solid #f5c6cb;
+  border-radius: 6px;
+}
+
+.operationsState {
+  padding: 32px;
+  text-align: center;
+  color: #666;
+}
+
+.operationsGridWrap {
+  background-color: #ffffff;
+}
+
+.operationActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 100%;
+}
+
+.transactionsListDone {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.transactionsListDone:hover:not(:disabled) {
+  background-color: #43a047;
+}
+
+.transactionsListCancel {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff4b45;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.transactionsListCancel:hover:not(:disabled) {
+  background-color: #e53935;
+}
+
+.transactionsListDone:disabled,
+.transactionsListCancel:disabled {
+  background-color: #d6d6d6;
+  color: #888888;
+  cursor: not-allowed;
+}
+
+.opStatusBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.opStatusPending {
+  background-color: #fff8e1;
+  color: #b45309;
+}
+
+.opStatusDone {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.opStatusCancelled {
+  background-color: #fdecea;
+  color: #c62828;
+}
+
+@media only screen and (max-width: 700px) {
+  .transactions {
+    padding: 12px;
+  }
+}

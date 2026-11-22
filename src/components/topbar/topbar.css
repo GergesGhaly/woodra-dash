@@ -1,0 +1,64 @@
+a {
+  text-decoration: none;
+  color: inherit;
+  user-select: none;
+  padding: 0 10px;
+  color: #555;
+}
+.topbar {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background: #a0af92;
+  background: linear-gradient(90deg, #a0af92 0%, #636d55 100%);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.topbarWrapper {
+  height: 100%;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: 600;
+  color: #141414;
+  cursor: pointer;
+}
+
+.topRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.adminName {
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.topbarLogoutBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  background-color: #99532f;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.topbarLogoutBtn:hover {
+  background-color: #7d4224;
+}
+

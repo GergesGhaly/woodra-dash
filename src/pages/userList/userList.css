@@ -1,0 +1,113 @@
+.userList {
+  flex: 6;
+  width: 100%;
+  padding: 20px;
+}
+
+.userListHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.userListTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2b2b2b;
+}
+
+.userListSubtitle {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #666;
+}
+
+.userSearchBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  padding: 6px 12px;
+  min-width: 280px;
+  max-width: 380px;
+  width: 100%;
+}
+
+.userSearchIcon {
+  color: #888;
+  font-size: 20px !important;
+}
+
+.userSearchInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 4px 0;
+  background: transparent;
+}
+
+.userSearchClear {
+  border: none;
+  background: transparent;
+  color: #99532f;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.userListError {
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  background-color: #fdecea;
+  color: #b71c1c;
+  border: 1px solid #f5c6cb;
+  border-radius: 6px;
+}
+
+.userListState {
+  padding: 32px;
+  text-align: center;
+  color: #666;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.userListGridWrap {
+  background-color: #ffffff;
+}
+
+.userListNameCell {
+  font-weight: 600;
+  color: #2b2b2b;
+}
+
+.userListEdit {
+  background-color: #99532f;
+  padding: 8px 14px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.userListEdit:hover {
+  background-color: #7d4224;
+}
+
+@media only screen and (max-width: 700px) {
+  .userList {
+    padding: 12px;
+  }
+  .userSearchBox {
+    min-width: 0;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,397 @@
+.gaSection {
+  margin-top: 28px;
+  padding-top: 22px;
+  border-top: 2px solid #f0f0f0;
+}
+
+.gaHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.gaTitleRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.gaHeaderIcon {
+  color: #99532f;
+}
+
+.gaTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2b2b2b;
+}
+
+.gaPropertyTag {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background-color: #fff8e1;
+  color: #b45309;
+}
+
+.gaSubtitle {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #666;
+}
+
+.gaControls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gaPresetGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.gaPresetBtn {
+  padding: 7px 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #444;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.gaPresetBtn.active {
+  background-color: #99532f;
+  border-color: #99532f;
+  color: #ffffff;
+}
+
+.gaRefreshBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border: 1px solid #99532f;
+  border-radius: 4px;
+  background-color: #99532f;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.gaRefreshBtn:hover:not(:disabled) {
+  background-color: #7d4224;
+  border-color: #7d4224;
+}
+
+.gaRefreshBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.gaCustomRangeForm {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 14px;
+  padding: 12px 14px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.gaCustomRangeForm label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #555;
+}
+
+.gaCustomRangeForm input {
+  padding: 7px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.gaApplyCustomBtn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #99532f;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.gaApplyCustomBtn:hover {
+  background-color: #7d4224;
+}
+
+.gaMetaBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+  font-size: 12px;
+  color: #666;
+}
+
+.gaLoadingState,
+.gaEmptyState {
+  padding: 28px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #666;
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.gaErrorCard {
+  padding: 20px;
+  background-color: #fdecea;
+  border: 1px solid #f5c6cb;
+  border-radius: 10px;
+  color: #8a1f1f;
+}
+
+.gaErrorTitle {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.gaErrorText {
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.gaRetryBtn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff4b45;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.gaMetricsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.gaMetricCard {
+  background-color: #ffffff;
+  padding: 16px 18px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gaMetricLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: #666;
+}
+
+.gaMetricValueRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.gaMetricValue {
+  font-size: 24px;
+  font-weight: 700;
+  color: #141414;
+}
+
+.gaDeltaBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 5px;
+}
+
+.gaDeltaUp {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.gaDeltaDown {
+  background-color: #fdecea;
+  color: #c62828;
+}
+
+.gaDeltaNeutral {
+  background-color: #f0f0f0;
+  color: #555;
+}
+
+.gaChartsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.gaChartCard {
+  background-color: #ffffff;
+  padding: 18px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.gaChartWide {
+  grid-column: span 2;
+}
+
+.gaChartTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2b2b2b;
+  margin-bottom: 12px;
+}
+
+.gaChartContainer {
+  width: 100%;
+  min-height: 260px;
+}
+
+.gaEmptyChart {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+}
+
+.gaDeviceLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gaPieWrap {
+  width: 100%;
+  height: 220px;
+}
+
+.gaDeviceLegend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.gaDeviceRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.gaDeviceDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.gaDeviceName {
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #333;
+}
+
+.gaDeviceVal {
+  color: #666;
+}
+
+.gaTableWrap {
+  overflow-x: auto;
+}
+
+.gaTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.gaTable th,
+.gaTable td {
+  text-align: left;
+  padding: 9px 10px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.gaTable th {
+  color: #666;
+  font-weight: 600;
+}
+
+.gaMonoPath {
+  font-family: monospace;
+  font-size: 12px;
+  color: #555;
+}
+
+.gaNoticeBanner {
+  margin-top: 18px;
+  padding: 12px 16px;
+  background-color: #fff8e1;
+  border: 1px solid #ffe082;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  color: #5d4037;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 1100px) {
+  .gaMetricsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .gaChartsGrid {
+    grid-template-columns: 1fr;
+  }
+  .gaChartWide {
+    grid-column: span 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .gaMetricsGrid {
+    grid-template-columns: 1fr;
+  }
+}

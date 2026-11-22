@@ -1,0 +1,375 @@
+.user {
+  flex: 6;
+  padding: 20px;
+}
+
+.userTitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.userTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2b2b2b;
+}
+
+.userSubtitle {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #666;
+}
+
+.userHeaderLinks {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.userNavLink {
+  padding: 9px 15px;
+  background-color: #99532f;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.userNavLink:hover {
+  background-color: #7d4224;
+}
+
+.userNavLinkSecondary {
+  padding: 9px 15px;
+  border: 1px solid #99532f;
+  color: #99532f;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.userBackLink {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #99532f;
+}
+
+.userState {
+  padding: 32px;
+  text-align: center;
+  color: #666;
+}
+
+.userError {
+  padding: 12px 16px;
+  margin-top: 14px;
+  background-color: #fdecea;
+  color: #b71c1c;
+  border: 1px solid #f5c6cb;
+  border-radius: 6px;
+}
+
+.userSuccess {
+  padding: 12px 16px;
+  margin-top: 14px;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #c8e6c9;
+  border-radius: 6px;
+}
+
+.userContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.userShow {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.userShowTop {
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.userAvatarFallback {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #a0af92, #636d55);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.userShowTopTitle {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+
+.userShowUsername {
+  font-weight: 700;
+  font-size: 18px;
+  color: #2b2b2b;
+}
+
+.userShowUserTitle {
+  font-weight: 400;
+  font-size: 13px;
+  color: #777;
+  margin-top: 2px;
+}
+
+.userShowDetailsGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 24px;
+  margin-top: 18px;
+}
+
+.userShowSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.userShowTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.userShowInfo {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 8px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.userShowIcon {
+  font-size: 18px !important;
+  color: #99532f;
+  margin-top: 1px;
+}
+
+.userShowInfoLabel {
+  color: #777;
+  white-space: nowrap;
+}
+
+.userShowInfoTitle {
+  font-weight: 500;
+  color: #222;
+}
+
+.userSummaryCards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.userSummaryCard {
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  padding: 14px 16px;
+  background-color: #fafafa;
+}
+
+.userSummaryTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+}
+
+.userSummaryIconAmber {
+  color: #99532f;
+}
+
+.userSummaryIconGreen {
+  color: #2e7d32;
+}
+
+.userSummaryValue {
+  font-size: 24px;
+  font-weight: 700;
+  color: #141414;
+  margin: 6px 0 4px;
+}
+
+.userSummarySub {
+  font-size: 12px;
+  color: #777;
+}
+
+.userOrdersCard {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.userOrdersHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.userOrdersTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2b2b2b;
+}
+
+.userOrdersCount {
+  font-size: 13px;
+  font-weight: 600;
+  color: #666;
+}
+
+.userOrdersEmpty {
+  padding: 24px 0;
+  text-align: center;
+  color: #777;
+}
+
+.userOrdersTableWrap {
+  overflow-x: auto;
+}
+
+.userOrdersTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.userOrdersTable th,
+.userOrdersTable td {
+  text-align: left;
+  padding: 12px 10px;
+  border-bottom: 1px solid #eeeeee;
+  vertical-align: middle;
+}
+
+.userOrdersTable th {
+  color: #666;
+  font-weight: 600;
+}
+
+.orderIdCell {
+  font-weight: 600;
+  color: #333;
+}
+
+.orderAmountCell {
+  font-weight: 600;
+}
+
+.orderProductsList {
+  margin: 0;
+  padding-left: 16px;
+}
+
+.orderProductsList li {
+  margin: 2px 0;
+}
+
+.userOrderBadge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.userOrderPending {
+  background-color: #fff8e1;
+  color: #b45309;
+}
+
+.userOrderDone {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.userOrderCancelled {
+  background-color: #fdecea;
+  color: #c62828;
+}
+
+.orderActionButtons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.orderBtnDone {
+  padding: 7px 13px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.orderBtnDone:hover:not(:disabled) {
+  background-color: #43a047;
+}
+
+.orderBtnCancel {
+  padding: 7px 13px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff4b45;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.orderBtnCancel:hover:not(:disabled) {
+  background-color: #e53935;
+}
+
+.orderBtnDone:disabled,
+.orderBtnCancel:disabled {
+  background-color: #d6d6d6;
+  color: #888888;
+  cursor: not-allowed;
+}
+
+@media only screen and (max-width: 900px) {
+  .userShowDetailsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .user {
+    padding: 12px;
+  }
+}

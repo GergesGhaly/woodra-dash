@@ -1,0 +1,144 @@
+.categoriesPage {
+  flex: 6;
+  padding: 20px;
+}
+
+.categoriesHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.categoriesTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2b2b2b;
+}
+
+.categoriesSubtitle {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #666;
+}
+
+.addCategoryButton {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 4px;
+  background-color: #99532f;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.addCategoryButton:hover {
+  background-color: #7d4224;
+}
+
+.categoriesError {
+  padding: 12px 16px;
+  margin-bottom: 14px;
+  background-color: #fdecea;
+  color: #b71c1c;
+  border: 1px solid #f5c6cb;
+  border-radius: 6px;
+}
+
+.categoriesSuccess {
+  padding: 12px 16px;
+  margin-bottom: 14px;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #c8e6c9;
+  border-radius: 6px;
+}
+
+.categoriesState {
+  padding: 32px;
+  text-align: center;
+  color: #666;
+}
+
+.categoriesGridWrap {
+  background-color: #ffffff;
+}
+
+.categoryArabicCell {
+  width: 100%;
+  display: inline-block;
+  text-align: right;
+}
+
+.categoryActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 100%;
+}
+
+.categoryEditBtn {
+  background-color: #99532f;
+  padding: 8px 14px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.categoryEditBtn:hover {
+  background-color: #7d4224;
+}
+
+.categoryDeleteBtn {
+  padding: 8px 14px;
+  border: none;
+  background-color: #ff4b45;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.categoryFormGroup {
+  display: flex;
+  flex-direction: column;
+  margin-top: 14px;
+}
+
+.categoryFormGroup label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.categoryFormGroup input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.modalFormError {
+  padding: 10px 12px;
+  margin-top: 4px;
+  background-color: #fdecea;
+  color: #b71c1c;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.assignedProductsList {
+  margin: 10px 0 12px 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+@media only screen and (max-width: 700px) {
+  .categoriesPage {
+    padding: 12px;
+  }
+}
